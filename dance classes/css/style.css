@@ -1,0 +1,846 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;500;600;700;800&family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  list-style: none;
+  text-transform: capitalize;
+  font-family: "Nunito", sans-serif;
+  
+  /* box-shadow: .5rem .7rem 1rem rgba(255,255,255,.1); */
+}
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 10rem; */
+}
+/* html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: var(--gradient);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--white);
+  border-radius: 5rem;
+} */
+nav {
+  padding: 0 5%;
+  display: flex;
+  background: #ab4d63;
+  
+}
+nav .phone {
+  padding: 1rem 1rem;
+}
+nav .phone a {
+  color: #fff;
+  font-size: 1.2rem;
+}
+nav .phone span {
+  color: #fff;
+  font-size: 1.2rem;
+  /* word-spacing: .2rem; */
+  /* letter-spacing: .1rem; */
+}
+nav .phone i {
+  padding: 0 0.3rem 0 0;
+  color: #fff;
+  font-size: 1rem;
+}
+.social-icon {
+  display: flex;
+  /* margin-left: 19rem; */
+  position: absolute;
+  right: 2%;
+}
+.social-icon li a:hover, 
+.first-icons .socials-icon a:hover {
+  transform: rotate(360deg);
+  color: orange;
+}
+.social-icon li {
+  letter-spacing: 1rem;
+  padding: 1rem 0.2rem;
+  font-size: 1.5rem;
+}
+.social-icon li a {
+  color: #fff;
+}
+/* ===========================================logo==================== */
+.container-logo {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 4rem;
+}
+.container-logo .logo {
+  float: left;
+  width: 10rem;
+  height: 10rem;
+}
+.container-logo .logo img {
+  width: 100%;
+  height: 100%;
+}
+.container-logo .headling {
+  float: left;
+  margin: auto 0;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ff0000;
+}
+/* ---------------navition----------- */
+
+header {
+  /* position: fixed; */
+  top: 40%;
+  left: 0;
+  right: 0;
+  background: #f8a659;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8a659;
+  padding: 3px 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  
+}
+
+.navbar ul {
+  display: inline-flex;
+  list-style: none;
+  color: white;
+}
+
+.navbar ul li {
+  /* width: 120px; */
+  /* margin: 15px; */
+  /* padding: 5px; */
+  padding: 20px 30px 28px;
+}
+.active,
+.navbar ul li:hover {
+  background-color: red;
+  color: #fff;
+}
+.navbar ul li a {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  color: #000;
+}
+.nav1 ul li:hover {
+  background: rgb(69, 65, 65);
+  border-radius: 5px;
+}
+.nav1 {
+  display: none;
+}
+
+.navbar ul li:hover .nav1 {
+  display: block;
+  position: absolute;
+  background-color: #fff;
+  color: white;
+  margin-top: 27px;
+  margin-left: -30px;
+  z-index: 1000;
+}
+.navbar ul li:hover .nav1 ul {
+  display: block;
+}
+.navbar ul li:hover .nav1 ul li:hover {
+  background-color: #dbd3d3;
+  color: white;
+}
+
+.navbar ul li:hover .nav1 ul li {
+  padding: 10px;
+  border-bottom: 1px dotted #000;
+}
+/* =============================all gether===================== */
+/* section{
+  padding: 2rem 7%;
+} */
+
+/* ===============================swiper ======================== */
+.swiper-container {
+  margin-top: 1rem;
+  z-index: -1;
+}
+.swiper {
+  content: "";
+  position: absolute;
+  /* z-index: 999; */
+  width: 99%;
+  height: 500px;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 500px;
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  color: #000000;
+}
+.swiper .swiper-pagination-bullet-active {
+  background-color: #060606;
+}
+
+/* =====================main container================= */
+.main-container {
+  width: 100%;
+  /* height: 800px; */
+  background: wheat;
+}
+.main-container .title {
+  padding: 3rem 6% 0 6%;
+  font-size: 2.5rem;
+}
+
+.hr-first {
+  height: 10px;
+  width: 15%;
+  margin-top: 0.5rem;
+  height: 5px;
+  background: black;
+  border-top: 2px solid red;
+  border-left: 0;
+  border-right: 0;
+  background: transparent;
+}
+.hr-second {
+  height: 10px;
+  width: 8%;
+  margin-top: 0.5rem;
+  height: 5px;
+  background: black;
+  border-top: 2px solid red;
+  border-left: 0;
+  border-right: 0;
+  background: transparent;
+}
+.second-content {
+  display: flex;
+}
+.left {
+  float: left;
+  width: 40%;
+  padding: 3rem 3%;
+  font-size: 1.1rem;
+  word-spacing: 0.2rem;
+}
+.left h2{
+  padding-bottom: 10px ;
+  color: #000;
+  font-size: 2.5rem;
+}
+.mid-image {
+  float: right;
+  width: 30%;
+  padding-top: 8rem;
+}
+.right {
+  width: 30%;
+  float: right;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+}
+.right .first {
+  width: 100%;
+  height: 15rem;
+  background-color: #f5f8f7;
+  padding: 1.5rem;
+  /* padding: .5rem ; */
+  margin-bottom: 3rem;
+  /* margin-bottom: .5rem; */
+}
+.right .first-text {
+  margin-top: 2.5rem;
+  /* margin-top: .5rem; */
+  /* padding: 4rem; */
+  font-size: 1.5rem;
+  color: #ff0000;
+}
+.right .second {
+  width: 100%;
+  height: 23rem;
+  background-color: #f5f8f7;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.right .second a{
+  color: rgb(83, 17, 217);
+  /* text-decoration: underline; */
+  padding-left: 10px;
+}
+.right .second-text {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #ff0000;
+}
+.mid-image img {
+  width: 100%;
+  /* height: 80px; */
+}
+/* =====================================video start ======================== */
+.videos-containts {
+  padding: 2rem 6%;
+}
+.container {
+  margin-top: 2rem;
+  width: 100%;
+  /* height: 100vh; */
+  /* background-color: aqua; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4px;
+}
+
+.container video {
+  width: 320px;
+  height: 200px;
+  /* border: 2px solid red; */
+}
+
+.container .box {
+  width: 380px;
+  height: 330px;
+  background-color: #ece5e5;
+  border: 1px solid ;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.container .video-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  font-size: 2rem;
+}
+/* =====================================video end ======================== */
+
+/* ===========================image-container===================== */
+.image-container {
+  padding: 2rem 6%;
+}
+.images {
+  width: 100%;
+  margin-top: 2rem;
+}
+.images img {
+  width: 250px;
+  height: 200px;
+  margin: 0 10px;
+  border: 2px solid;
+}
+
+/* =================footer=================== */
+.footer {
+  background: #242222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 4%;
+  width: 100%;
+  height: 20rem;
+}
+.footer h1 {
+  margin-top: 0.1rem;
+}
+.first-text .fa-solid {
+  padding: 15px;
+  color: #f1faf7;
+}
+.first .socials-icon {
+  display: flex;
+ 
+}
+.first .socials-icon li {
+  letter-spacing: 1rem;
+  padding: 1rem 0.2rem;
+  font-size: 1.5rem;
+}
+.first .socials-icon li a {
+  color: #fff;
+}
+
+.second .second-text {
+  padding: 20px 5px;
+}
+.third {
+  padding-bottom: 9.2rem;
+}
+.fourth h1 {
+  padding: 0;
+  margin-top: 35px;
+}
+.fourth,
+.hr-second,
+.hr-first {
+  /* border: 5px solid black; */
+  margin: 0;
+  padding: 0;
+}
+
+.fourth .images .imge {
+  display: inline-block;
+  cursor: pointer;
+}
+.fourth .images img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+.footer-last {
+  width: 100%;
+  /* height: 10rem; */
+  background: #000000;
+  color: #fff;
+  padding: 2rem 5%;
+}
+.footer-last .last-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-last .last-text h4 a {
+  color: #fff;
+}
+.footer-last .last-text h4 {
+  margin-right: 10%;
+}
+
+/* =========================hwr page======================== */
+.hwe-container {
+  padding: 2rem 4%;
+  width: 75%;
+}
+.hwe-container .headling {
+  background-color: rgb(228, 217, 217);
+  border: 4px solid red;
+  padding: 20px;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  margin-bottom: 2rem;
+}
+.hwe-container .headling h1 {
+  padding-bottom: 10px;
+}
+.hwe-container .text-img {
+  display: flex;
+}
+.hwe-container .text-img .text {
+  width: 60%;
+  word-spacing: 0.2rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.hwe-container .text-2 {
+  word-spacing: 0.2rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.hwe-container .text-img .img {
+  position: absolute;
+  right: 29%;
+  width: 25%;
+  height: 35%;
+  /* border: 2px solid red; */
+  /* z-index: -1; */
+}
+.hwe-container .text-img .img img {
+  width: 100%;
+  height: 100%;
+}
+/* =================table--------------- */
+.hwe-container .comettee-form {
+  margin: 2rem 0;
+}
+
+.hwe-container .comettee-form table {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 14rem;
+}
+.hwe-container .comettee-form table td {
+  width: 65%;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 4px;
+}
+.hwe-container .comettee-form table td.first {
+  /* background-color: red; */
+  border-right: 0;
+}
+/* =========================hwr page end======================== */
+
+/* ----------------------our campus start------------------------------ */
+.hwe-container .compus-hed {
+  font-size: 1.5rem;
+  padding: 10px 0 20px;
+}
+.hwe-container .box-container {
+  /* background-color: red; */
+  width: 100%;
+  display: flex;
+  /* border: 2px solid ; */
+  margin: 0 0 5px;
+}
+.hwe-container .box-container .text {
+  /* background-color: red; */
+  width: 65%;
+  padding-right: 10px;
+  margin: auto;
+  padding: 10px;
+}
+.hwe-container .box-container .text h2 {
+  text-align: center;
+}
+.hwe-container .box-container .image {
+  /* background-color: rgb(31, 211, 15); */
+  width: 35%;
+  height: 30%;
+  margin: auto;
+}
+.hwe-container .box-container .image img {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+
+/* ----------------------our campus end------------------------------ */
+
+/* ----------------------our visit stat------------------------------ */
+.hwe-container .imgaes {
+  width: 100%;
+  height: 30rem;
+}
+.hwe-container .imgaes img {
+  width: 100%;
+  height: 100%;
+}
+.hwe-container .details {
+  font-size: 1.5rem;
+  /* color: grey; */
+  margin-top: 1rem;
+  margin-bottom: 12rem;
+}
+.hwe-container .details h6 {
+  padding: 10px 0;
+}
+/* ----------------------our visit end------------------------------ */
+/* ===================vocal start ============================== */
+.vocals .headlings {
+  margin: auto;
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+.vocals .headlings h1 {
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 10px 0;
+}
+.vocals .headlings h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 10px 0;
+}
+.sub-headling h1 {
+  font-size: 1.9rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 10px 0;
+  text-decoration: underline;
+  justify-content: space-between;
+}
+.dances .mid-text h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: left;
+  padding: 0 0 10px 10px;
+}
+.dances .mid-text h5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: right;
+  padding: 10px 10px 0 0;
+}
+
+/* ===================vocal end============================== */
+/* ================instrument start================================= */
+.subject .text h4 {
+  text-align: center;
+  margin: auto;
+  font-weight: 300;
+  /* border: 2px solid red; */
+  padding: 5px;
+  width: 40%;
+}
+/* ================instrument end================================= */
+/* ============================dancess start============================ */
+.dances {
+  width: 100%;
+  display: flex;
+  /* border: 2px solid red; */
+  margin: 2rem 4%;
+  height: 16rem;
+}
+.dances .left-imgs {
+  width: 25%;
+  height: 15rem;
+  border: 2px solid #ee8282;
+  /* border: 2px solid red; */
+}
+.dances .left-imgs img {
+  width: 100%;
+  height: 100%;
+}
+.dances .mid-text {
+  width: 25%;
+  /* border: 2px solid red; */
+  height: 15rem;
+  text-align: center;
+  padding-top: 50px;
+}
+.dances .mid-text h1 {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+.dances .right-imgs {
+  width: 25%;
+  /* border: 2px solid red; */
+  height: 15rem;
+  border: 2px solid #ee8282;
+}
+.dances .right-imgs img {
+  width: 100%;
+  height: 100%;
+}
+.marg {
+  margin-bottom: 10rem;
+}
+/* ============================dancess end============================ */
+/* ============================course fee start============================ */
+.fee {
+  text-align: center;
+}
+.fee h1,
+h2 {
+  font-weight: 300;
+  font-size: 1.3rem;
+}
+/* ============================course fee end============================ */
+/* ============================examnation start============================ */
+.exam-pdf {
+  display: flex;
+  padding: 5px 5px 5px 95px;
+}
+.exam-pdf i {
+  padding: 0 0 0 10px;
+  font-size: 1.5rem;
+  color: black;
+}
+.exam-image {
+  width: 100%;
+  height: 100%;
+}
+.exam-image img {
+  width: 100%;
+  height: 100%;
+}
+
+/* exam-table */
+
+.exam-tabal {
+  margin: 1rem 2rem 5rem 1rem;
+}
+.exam-tabal h1 {
+  text-align: center;
+}
+.exam-tabal table,
+th,
+td {
+  /* width: 100%; */
+  border: 1px solid;
+  padding: 5px 10px;
+}
+
+/* ============================examnation end============================ */
+/* ============================photo-container start============================ */
+.photo-container {
+  padding: 2rem 4%;
+  width: 100%;
+}
+.photo-container .headling {
+  background-color: rgb(228, 217, 217);
+  border: 4px solid red;
+  padding: 20px;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 0;
+  margin-bottom: 2rem;
+}
+.photo-container .headling h1 {
+  padding-bottom: 10px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 1.5rem;
+}
+.photo-gallery img {
+  /* width: 100%;
+  height: 100%; */
+  width: 23rem;
+  height: 20rem;
+  border: 2px solid #f07878;
+  border-radius: 10px;
+}
+/* ============================photo-container end============================ */
+/* ============================video gallery start============================ */
+.videoes .box {
+  border: none;
+  width: 22rem;
+  padding: 5px 7px;
+  height: auto;
+  background: transparent;
+}
+/* ============================video gallery end============================ */
+/* ============================contact us start============================ */
+.contacts {
+  margin: 0rem 3rem 4rem;
+  background: #f9dede;
+}
+
+.contacts .contact-box {
+  display: flex;
+}
+.contacts .contact-box .address,
+.cont,
+.work {
+  border: 2px solid;
+  padding: 15px 10px 25px;
+  margin: 0 5px 40px;
+  /* border: 5px solid greenyellow; */
+  width: 35%;
+}
+.contacts .contact-box i {
+  font-size: 3rem;
+  background-color: #0b0101;
+  color: #f1eded;
+  padding: 15px;
+  border-radius: 5px;
+  position: relative;
+  top: -18%;
+  left: 34%;
+  border-radius: 11px;
+}
+.contacts .contact-box h2 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+.contacts .contact-box h3 {
+  color: #000;
+  font-weight: 400;
+  padding: 10px 0;
+}
+/* .contacts .photo-container{   this is for get me tuch===========
+   width: 108%;
+   margin-left: -49px;
+ } */
+.contacts .contect-us-form {
+  display: flex;
+  gap: 10px;
+  height: 36rem;
+}
+.contacts .contect-us-form .contect-us {
+  width: 55%;
+  padding: 15px;
+}
+.contacts .contect-us-form .contect-us .hr-second,
+.hr-first {
+  border-top: 2px solid #e31915;
+}
+.contacts .contect-us-form .contect-us form {
+  width: 100%;
+}
+.contacts .contect-us-form .contect-us form input {
+  width: 95%;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  border: none;
+}
+.contacts .contect-us-form .contect-us form textarea {
+  width: 95%;
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+  border: none;
+}
+.contacts .contect-us-form .contect-us form .btn {
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 2rem;
+  background: #e7c162;
+  color: white;
+  align-items: center;
+  margin: 2px 0 5px 10px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+.contacts .contect-us-form .contect-us form .btn:hover{
+  cursor: pointer;
+  background-color: #e6a90f;
+  color: #000;
+  letter-spacing: 2px;
+}
+.contacts .contect-us-form .contect-us form input::placeholder{
+ font-size: 1rem;
+ color: #000;
+ font-weight: 300;
+}
+.contacts .contect-us-form .contect-us form textarea::placeholder{
+ font-size: 1rem;
+ color: #000;
+ font-weight: 300;
+}
+.contacts .contect-us-form .map {
+  width: 45%;
+  overflow: hidden;
+  background-size: cover;
+}
+.contacts .contect-us-form .map iframe{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+}
+
+/* ============================contact us end============================ */
