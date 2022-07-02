@@ -17,13 +17,13 @@
     <nav class="header">
         <div class="phone">
             <i class="fa fa-phone"></i>
-            <span>8210883133 / 7004587423</span>
+            <span>8210883133/ 7004587423</span>
         </div>
         <div class="phone">
             <a href="pdf/holiday list.pdf">Holiday List</a>
         </div>
         <div class="phone">
-            <a href="pdf/Registration JKK.pdf" target="blank">Download Affiliation Form For Foreign franchise</a>
+            <a href="pdf/Registration JKK.pdf" target="blank">Affiliation Form</a>
         </div>
 
         <ul class="social-icon">
@@ -45,14 +45,13 @@
             <h1> 𝔍𝔥𝔞𝔯𝔨𝔥𝔞𝔫𝔡 𝔎𝔞𝔩𝔞 𝔎𝔢𝔫𝔡𝔯𝔞 𝔇𝔲𝔪𝔨𝔞</h1>
         </div>
     </div>
-
     <header>
         <div class="navbar" id="navbar">
             <!-- <input type="checkbox" id="menu-bar">
         <label for="menu-bar">menu</label> -->
             <ul id="menus">
                 <li><a href="index.html">home</a></li>
-                <li><a href="#">about us <i class="fa fa-angle-down"></i></a>
+                <li  class="menu-responsive"><a href="#">about us <i class="fa fa-angle-down"></i></a>
                     <div class="nav1">
                         <ul>
                             <li><a href="hwr.html">who we are</a></li>
@@ -62,7 +61,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="course.html">courses <i class="fa fa-angle-down"></i></a>
+                <li class="menu-responsive"><a href="course.html">courses <i class="fa fa-angle-down"></i></a>
                     <div class="nav1">
                         <ul>
                             <li><a href="vocal.html">vocal</a></li>
@@ -72,7 +71,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">examination <i class="fa fa-angle-down"></i></a>
+                <li class="menu-responsive"><a href="#">examination <i class="fa fa-angle-down"></i></a>
                     <div class="nav1">
                         <ul>
                             <li><a href="examnation1.html">praveen thoery and practical examinatin programme may
@@ -82,7 +81,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">gallery <i class="fa fa-angle-down"></i></a>
+                <li class="menu-responsive"><a href="#">gallery <i class="fa fa-angle-down"></i></a>
                     <div class="nav1">
                         <ul>
                             <li><a href="photoglr.html">photo gallery</a></li>
@@ -91,7 +90,7 @@
                     </div>
                 </li>
                
-                <li><a href="#">Download <i class="fa fa-angle-down"></i></a>
+                <li class="menu-responsive"><a href="#">Download <i class="fa fa-angle-down"></i></a>
                     <div class="nav1">
                         <ul>
                             <li><a href="Syllabus.html">Syllabus</a></li>
@@ -109,9 +108,12 @@
                     <div class="nav1">
                     </div>
                 </li> -->
-                <li><a href="media.html">media</a></li>
+                <li class="menu-responsive"><a href="media.html">media</a></li>
 
-                <li><a href="contectus.html">contact us</a></li>
+                <li class="menu-responsive"><a href="contectus.html">contact us</a></li>
+                <a href="javascript:void(0);" class="menu-icon" onclick="toggleNav()">
+                <img src="./img/icon/menu.png" alt="">
+                </a>
             </ul>
         </div>
     </header>
@@ -130,7 +132,7 @@
                 <div class="swiper-slide"><img src="img/Home Photos.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="img/img11.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="img/img3.jpg" alt=""></div>
-                ...
+                
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -312,19 +314,19 @@
         <h1>hall and fame</h1>
         <hr class="hr-second">
         <hr class="hr-first">
-        <div class="image-box-container">
-
-            <marquee class="images" width="100%" direction="right" height="100%" scrollamount="10">
-                <img class="image-box" src="img/img1.jpg" alt="">
-                <img class="image-box" src="img/img2.jpg" alt="">
-                <img class="image-box" src="img/img3.jpg" alt="">
-                <img class="image-box" src="img/img4.jpg" alt="">
-                <img class="image-box" src="img/img6.jpg" alt="">
-                <img class="image-box" src="img/img7.jpg" alt="">
-                <img class="image-box" src="img/img9.jpg" alt="">
-            </marquee>
-
-        </div>
+        <div class="mySwiper">
+			<div class="swiper-wrapper">
+				<img class="swiper-image-box swiper-slide" src="img/img1.jpg" alt="" />
+				<img class="swiper-image-box swiper-slide" src="img/img2.jpg" alt="" />
+				<img class="swiper-image-box swiper-slide" src="img/img3.jpg" alt="" />
+				<img class="swiper-image-box swiper-slide" src="img/img4.jpg" alt="" />
+				<img class="swiper-image-box swiper-slide" src="img/img5.jpg" alt="" />
+				<img class="swiper-image-box swiper-slide" src="img/img6.jpg" alt="" />
+				<img class="swiper-image-box swiper-slide" src="img/img7.jpg" alt="" />
+				<img class="swiper-image-box swiper-slide" src="img/img8.jpg" alt="" />
+				<img class="swiper-image-box swiper-slide" src="img/img9.jpg" alt="" />
+			</div>
+		</div>
 
 
 
@@ -388,7 +390,13 @@
             <h4><a href="#">feature programme</a> | <a href="contectus.html">contact</a></h4>
         </div>
     </div>
-
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+        <span class="modalClose" onclick="closeModal()">&times;</span>
+        <img src="" alt="" id="modalImage"/>
+        </div>
+    </div>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
