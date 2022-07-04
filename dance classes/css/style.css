@@ -932,6 +932,7 @@ td {
 	.navbar ul li {
 		/* display: block; */
 		transition: all 0.5s ease-in-out;
+		height: 70px;
 	}
 	a.menu-icon {
 		display: inline;
@@ -1036,7 +1037,7 @@ td {
 
 	.active,
 	.navbar ul li:hover {
-		background-color: #f3831b;
+		background-color: #f8a659;
 		color: #fff;
 	}
 	.navbar ul li:hover .nav1 {
@@ -1050,11 +1051,15 @@ td {
 	.contacts .contact-box .address,
 	.cont,
 	.work {
-		width: 100%;
+		width: 90%;
+		background: #f9dede;
+		padding: 3rem;
+		margin: 1rem;
 	}
 	.contacts {
 		margin: 0;
-		padding: 4rem 3rem;
+		padding: 0;
+		background-color: transparent;
 	}
 	.contacts .contect-us-form {
 		display: block;
@@ -1065,5 +1070,93 @@ td {
 		width: 100%;
 	}
 	/* Contact us page end */
+
+	/* Dance page start */
+	.hwe-container {
+		width: 100%;
+	}
+	.dances {
+		display: block;
+		height: auto;
+		position: relative;
+		padding-top: 3rem;
+		margin: 0;
+	}
+	.dances .left-imgs,
+	.dances .right-imgs,
+	.dances .mid-text {
+		width: 90%;
+		margin: 5%;
+	}
+	.dances .left-imgs {
+		margin-bottom: 1rem;
+	}
+	.dances .mid-text {
+		position: absolute;
+		top: 0;
+		padding: 0;
+	}
+	/* Dance page end */
+	/* Examination 2 start */
+	.exam-tabal {
+		overflow-x: auto;
+		width: 90%;
+		margin: 20;
+	}
+	/* Examination 2 end */
+	/* hwr start */
+	.hwe-container .text-img {
+		flex-direction: column-reverse;
+	}
+	.hwe-container .text-img .text {
+		width: auto;
+	}
+	.hwe-container .text-img .img {
+		position: unset;
+		width: auto;
+		margin: 0 4rem;
+	}
+	/* hwr end */
+	/* Media start */
+	.photo-gallery {
+		display: block;
+	}
+	.photo-gallery img {
+		width: 21rem;
+		margin-bottom: 1rem;
+	}
+	/* Media end */
+	/* ourcampus start */
+	.hwe-container .box-container {
+		flex-direction: column-reverse;
+	}
+	.hwe-container .box-container .text {
+		width: auto;
+	}
+	.hwe-container .box-container .image {
+		height: auto;
+		width: 70%;
+	}
+	/* ourcampus end */
+	/* Visit page start*/
+	.hwe-container .imgaes {
+		height: auto;
+	}
+	/* Visit page end*/
+	/* Vocal page start */
+	.dances .mid-text h5 {
+		position: absolute;
+		top: 280px;
+		text-align: left;
+	}
+	.dances .right-imgs {
+		margin-top: 3rem;
+	}
+	.dances .mid-text h4,
+	.dances .mid-text h5 {
+		font-size: 1rem;
+		font-weight: normal;
+	}
+	/* Vocal page end */
 }
 /* Responsive css end */

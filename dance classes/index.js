@@ -2,7 +2,7 @@
 var navbar = document.getElementById("navbar");
 var menus = document.getElementById("menus");
 
-window.onscroll = function () {
+window.onscroll = function() {
 	if (window.pageYOffset >= menus.offsetTop) {
 		navbar.classList.add("sticky");
 	} else {
@@ -43,9 +43,11 @@ const toggleNav = () => {
 	const menuItem = document.querySelectorAll(".menu-responsive");
 	const menus = document.querySelector("#menus");
 	if (menuItem[0].classList.contains("d-block")) {
-		menuItem.forEach((item) => {
-			item.classList.remove("d-block");
-		});
+		setTimeout(() => {
+			menuItem.forEach((item) => {
+				item.classList.remove("d-block");
+			});
+		}, 100);
 		menus.style.height = "70px";
 	} else {
 		menus.style.height = "600px";
@@ -53,7 +55,7 @@ const toggleNav = () => {
 			menuItem.forEach((item) => {
 				item.classList.add("d-block");
 			});
-		}, 500);
+		}, 200);
 	}
 };
 
