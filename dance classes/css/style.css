@@ -911,6 +911,7 @@ td {
 	nav {
 		align-items: flex-end;
 		padding-bottom: 20px;
+		justify-content: center;
 	}
 	nav .phone {
 		text-align: center;
@@ -924,7 +925,8 @@ td {
 		/* position: relative; */
 		width: 100%;
 		justify-content: center;
-		top: 44px;
+		top: 25px;
+		padding-left: 20px;
 	}
 
 	/* Navbar start */
@@ -952,6 +954,13 @@ td {
 		position: relative;
 		transition: all 0.5s ease-in-out;
 		height: 70px;
+	}
+	.fa-angle-down {
+		position: absolute;
+		right: 4rem;
+	}
+	.sticky {
+		position: static;
 	}
 	/* Navbar end */
 
