@@ -50,7 +50,7 @@ const toggleNav = () => {
 		}, 100);
 		menus.style.height = "70px";
 	} else {
-		menus.style.height = "600px";
+		menus.style.height = "570px";
 		setTimeout(() => {
 			menuItem.forEach((item) => {
 				item.classList.add("d-block");
@@ -71,7 +71,7 @@ const toggleNav = () => {
 // 	});
 // });
 
-// Modal
+// Modal Image
 const openModal = (e) => {
 	console.log(e.target);
 	const modal = document.querySelector(".modal");
@@ -122,7 +122,7 @@ const videoInserter = (count) => {
 		},
 	];
 	const videoContainer = document.querySelector(".video-container");
-	for (let i = 0; i < count ? count : videoList.length; i++) {
+	for (let i = 0; i < count; i++) {
 		const video = document.createElement("div");
 		video.classList.add("box");
 		video.innerHTML = `<iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="320" height="200" type="text/html" src="https://www.youtube.com/embed/${videoList[i].videoCode}?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=http://youtubeembedcode.com"><div><small><a href="https://youtubeembedcode.com/nl/">youtubeembedcode.com/nl/</a></small></div><div><small><a href="https://xn--utlndskabettingsidor-dzb.se/">utländskabettingsidor.se</a></small></div></iframe>

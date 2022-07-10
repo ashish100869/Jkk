@@ -51,8 +51,9 @@
             <!-- <input type="checkbox" id="menu-bar">
         <label for="menu-bar">menu</label> -->
             <ul id="menus">
-                <li><a href="index.html">home</a></li>
-                <li><a href="#">about us <i class="fa fa-angle-down"></i></a>
+                <li class="menu-responsive"><a href="index.html">home</a></li>
+                <li class="menu-responsive">
+                    <a href="#">about us <i class="fa fa-angle-down"></i></a>
                     <div class="nav1">
                         <ul>
                             <li><a href="hwr.html">who we are</a></li>
@@ -62,7 +63,8 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">courses <i class="fa fa-angle-down"></i></a>
+                <li class="menu-responsive">
+                    <a href="#">courses <i class="fa fa-angle-down"></i></a>
                     <div class="nav1">
                         <ul>
                             <li><a href="vocal.html">vocal</a></li>
@@ -72,17 +74,22 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">examination <i class="fa fa-angle-down"></i></a>
+                <li class="menu-responsive">
+                    <a href="#">examination <i class="fa fa-angle-down"></i></a>
                     <div class="nav1">
                         <ul>
-                            <li><a href="examnation1.html">praveen thoery and practical examinatin programme may
-                                    2022</a></li>
-                            
+                            <li>
+                                <a href="examnation1.html"
+                                    >praveen thoery and practical examinatin programme may 2022</a
+                                >
+                            </li>
+
                             <li><a href="examnation2.html">exam conducted</a></li>
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">gallery <i class="fa fa-angle-down"></i></a>
+                <li class="menu-responsive">
+                    <a href="#">gallery <i class="fa fa-angle-down"></i></a>
                     <div class="nav1">
                         <ul>
                             <li><a href="photoglr.html">photo gallery</a></li>
@@ -90,8 +97,9 @@
                         </ul>
                     </div>
                 </li>
-               
-                <li class="active"><a href="#">Download <i class="fa fa-angle-down"></i></a>
+
+                <li class="active">
+                    <a href="#">Download <i class="fa fa-angle-down"></i></a>
                     <div class="nav1">
                         <ul>
                             <li><a href="Syllabus.html">Syllabus</a></li>
@@ -99,22 +107,21 @@
                     </div>
                 </li>
                 <!-- <li><a href="#">result <i class="fa fa-angle-down"></i></a>
-                    <div class="nav1">
-                        <ul>
-                            <li><a href="result1.html">praveen exam 7th & 8th years may 2019</a></li>
-                        </ul>
-                    </div>
-                </li> -->
+                                <div class="nav1">
+                                        <ul>
+                                                <li><a href="result1.html">praveen exam 7th & 8th years may 2019</a></li>
+                                        </ul>
+                                </div>
+                        </li> -->
                 <!-- <li><a href="#">competition <i class="fa fa-angle-down"></i></a>
-                    <div class="nav1">
-                    </div>
-                </li> -->
-                <li><a href="media.html">media</a></li>
+                                <div class="nav1">
+                                </div>
+                        </li> -->
+                <li class="menu-responsive"><a href="media.html">media</a></li>
 
-                <li><a href="contectus.html">contact us</a></li>
-<li class="menu-responsive"><a href="contectus.html">contact us</a></li>
+                <li class="menu-responsive"><a href="contectus.html">contact us</a></li>
                 <a href="javascript:void(0);" class="menu-icon" onclick="toggleNav()">
-                <img src="./img/icon/menu.png" alt="">
+                    <img src="./img/icon/menu.png" alt="" />
                 </a>
             </ul>
         </div>
@@ -227,7 +234,13 @@
         <h4><a href="#">feature programme</a> | <a href="contectus.html">contact</a></h4>
     </div>
 </div>
-
+<div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+    <span class="modalClose" onclick="closeModal()">&times;</span>
+    <img src="" alt="" id="modalImage"/>
+    </div>
+</div>
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="index.js"></script>
