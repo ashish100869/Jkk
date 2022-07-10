@@ -75,8 +75,10 @@ nav .phone i {
 /* ===========================================logo==================== */
 .container-logo {
 	display: flex;
-	justify-content: space-between;
-	margin: 1rem 4rem;
+	justify-content: space-around;
+	padding: 1rem 4rem;
+	background: rgb(252, 197, 20);
+	background: radial-gradient(circle, rgba(252, 197, 20, 1) 0%, rgba(246, 102, 5, 1) 100%);
 }
 .container-logo .logo {
 	float: left;
@@ -909,9 +911,25 @@ td {
 .date span {
 	font-size: 1.3rem;
 }
+.headling {
+	font-weight: bold;
+	text-shadow: 0px 0px 5px white, 0px 0px 5px white;
+}
+.headling .t1 {
+	color: #095e33;
+}
+.headling .t2 {
+	color: #ff0100;
+}
+.headling .t3 {
+	color: #040778;
+}
 
 /* Responsive css start */
 @media only screen and (max-width: 480px) {
+	.headling .t2 {
+		font-size: 2rem;
+	}
 	nav {
 		align-items: flex-end;
 		padding-bottom: 20px;
@@ -930,7 +948,7 @@ td {
 		width: 100%;
 		justify-content: center;
 		top: 25px;
-		padding-left: 30px;
+		padding-left: 50px;
 	}
 
 	/* Navbar start */
@@ -1029,7 +1047,8 @@ td {
 		height: auto;
 	}
 	.container-logo {
-		margin: 1rem 2rem;
+		padding: 1rem 2rem;
+		justify-content: space-between;
 	}
 	.container-logo .logo {
 		width: 3rem;
